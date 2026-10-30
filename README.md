@@ -1,13 +1,17 @@
 <h3 align="center">SEAL: Mixture-Closed Reconstruction and Refinement-Aware Routing for Speech Separation</h3>
 <p align="center">
-  <strong>Shao-Chun Hu, Zi-Xiang Lin, Jeih-Weih Hung, Hung-Shin Lee</strong><br>
-  <a href="https://arxiv.org/abs/xxxx.xxxxx">📜 Paper (Coming Soon)</a> | <a href="https://Xiang-Lin75.github.io/SEAL/">🎶 Demo</a>
+  <strong><a href="https://github.com/chun0920">Shao-Chun Hu</a> (Primary Author), <a href="https://github.com/Xiang-Lin75">Zi-Xiang Lin</a>, Jeih-Weih Hung, Hung-Shin Lee</strong><br>
+  <a href="https://arxiv.org/abs/2610.07047">📜 arXiv:2610.07047</a> | <a href="https://Xiang-Lin75.github.io/SEAL/">🎶 Demo</a> | <a href="https://github.com/Xiang-Lin75/SEAL">🔗 Upstream Repo</a>
 </p>
 
 <p align="center">
+  <a href="https://arxiv.org/abs/2610.07047"><img src="https://img.shields.io/badge/arXiv-2610.07047-b31b1b.svg" alt="arXiv" /></a>
   <img src="https://img.shields.io/github/stars/Xiang-Lin75/SEAL?style=social" alt="GitHub stars" />
   <img alt="Static Badge" src="https://img.shields.io/badge/license-MIT-blue.svg" />
 </p>
+
+> [!NOTE]
+> **Primary Author Official Mirror**: This repository is the official mirror maintained by the paper's first author, **Shao-Chun Hu** ([@chun0920](https://github.com/chun0920)). Development, interactive audio demos, and live issue tracking are collaboratively hosted with co-authors at [Xiang-Lin75/SEAL](https://github.com/Xiang-Lin75/SEAL).
 
 > SEAL is a highly efficient model for single-channel speech separation that combines a shared-weight DPGRNN cell, refinement-aware Top-1 routing over stateless residual experts, and conservation-structured latent reconstruction to preserve mixture closure.
 
@@ -124,9 +128,16 @@ separated = model(mixture)                          # (B, L) -> (B, 2, L)
 
 ## 📖 Citation
 
-If you use SEAL, please cite the accompanying paper and this software:
+If you use SEAL, please cite the accompanying paper and software:
 
 ```bibtex
+@article{hu2026seal,
+  title={{SEAL}: Mixture-Closed Additive Reconstruction and Refinement-Aware Expert Routing for Efficient Speech Separation},
+  author={Hu, Shao-Chun and Lin, Zi-Xiang and Hung, Jeih-Weih and Lee, Hung-Shin},
+  journal={arXiv preprint arXiv:2610.07047},
+  year={2026}
+}
+
 @software{Hu_SEAL,
   author = {Hu, Shao-Chun and Lin, Zi-Xiang and Hung, Jeih-Weih and Lee, Hung-Shin},
   title = {{SEAL: Mixture-Closed Reconstruction and Refinement-Aware Routing for Speech Separation}},
